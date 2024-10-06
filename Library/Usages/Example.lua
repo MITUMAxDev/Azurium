@@ -2,7 +2,7 @@ local azrlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MITUMA
 
 local dev = "nigga" -- Developer who made that script for map
 
-local Window = azrlib:MakeWindow({"Azurium HUB: MAP", "by " .. dev, "testando-redzLibv5.json"})
+local Window = azrlib:MakeWindow({"Azurium HUB | MAP", "by " .. dev, "testando-redzLibv5.json"})
 Window:AddMinimizeButton({
   Button = { Image = "rbxassetid://124661137788979", BackgroundTransparency = 0 },
   Corner = { CornerRadius = UDim.new(0, 6) }
