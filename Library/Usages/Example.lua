@@ -1,4 +1,4 @@
-local azrlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+local azrlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MITUMAxDev/Azurium/main/Library/Source.lua"))()
 
 local dev = "nigga" -- Developer who made that script for map
 
