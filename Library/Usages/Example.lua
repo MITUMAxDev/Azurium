@@ -125,9 +125,13 @@ TextBox.OnChanging = function(Text)
   return 25
 end
 
+local Credit = Tab3:AddParagraph({"Credit", "idk just a credit"})
+
 Tab3:AddDiscordInvite({
   Name = "Azurium | Community",
   Description = "Join our discord community to receive information about the next update",
   Logo = "rbxassetid://124661137788979",
   Invite = "https://discord.gg/79cSmtQb6c"
 })
+
+local MapDev = Tab3:AddParagraph({"Developer Credit", "Map Supported by " .. dev})
