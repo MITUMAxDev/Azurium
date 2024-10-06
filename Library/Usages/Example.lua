@@ -8,20 +8,22 @@ Window:AddMinimizeButton({
   Corner = { CornerRadius = UDim.new(0, 6) }
 })
 
+azrlib:SetTheme("Azurium")
+
 local Tab1 = Window:MakeTab({"Home", ""})
 local Tab2 = Window:MakeTab({"Niggas", "Sword"})
 local Tab3 = Window:MakeTab({"Credits", "User"})
 
 Tab1:AddButton({"Dark Theme", function()
-  redzlib:SetTheme("Dark")
+  azrlib:SetTheme("Dark")
 end})
 
 Tab1:AddButton({"Darker Theme", function()
-  redzlib:SetTheme("Darker")
+  azrlib:SetTheme("Darker")
 end})
 
 Tab1:AddButton({"Dark Purple", function()
-  redzlib:SetTheme("Purple")
+  azrlib:SetTheme("Purple")
 end})
 
 -- Window:SelectTab(Tab2)
