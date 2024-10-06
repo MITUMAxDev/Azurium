@@ -60,12 +60,12 @@ local azrlib = {
 		}
 	},
 	Info = {
-		Version = "1.1.0"
+		Version = "7.7.7"
 	},
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "Darker"
+		Theme = "Azurium"
 	},
 	Settings = {},
 	Connection = {},
