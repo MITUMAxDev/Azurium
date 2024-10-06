@@ -45,6 +45,18 @@ local azrlib = {
 			["Color Theme"] = Color3.fromRGB(150, 0, 255),
 			["Color Text"] = Color3.fromRGB(240, 240, 240),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+	        Azurium = {
+	["Color Hub 1"] = ColorSequence.new({
+		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230, 240, 250)), -- very light blue
+		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(240, 250, 255)),
+		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 240, 250))
+	}),
+	["Color Hub 2"] = Color3.fromRGB(245, 255, 255), -- almost white with a hint of blue
+	["Color Stroke"] = Color3.fromRGB(200, 220, 240), -- soft blue stroke for outlines
+	["Color Theme"] = Color3.fromRGB(100, 200, 255), -- main light blue color for accents
+	["Color Text"] = Color3.fromRGB(30, 30, 30), -- dark grey for text
+	["Color Dark Text"] = Color3.fromRGB(100, 100, 100) -- medium grey for secondary text
 		}
 	},
 	Info = {
