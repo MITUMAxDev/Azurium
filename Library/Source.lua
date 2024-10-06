@@ -10,54 +10,19 @@ local PlayerMouse = Player:GetMouse()
 
 local azrlib = {
 	Themes = {
-		Darker = {
-	["Color Hub 1"] = ColorSequence.new({
-		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230, 240, 250)), -- very light blue
-		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(240, 250, 255)),
-		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 240, 250))
-	}),
-	["Color Hub 2"] = Color3.fromRGB(245, 255, 255), -- almost white with a hint of blue
-	["Color Stroke"] = Color3.fromRGB(200, 220, 240), -- soft blue stroke for outlines
-	["Color Theme"] = Color3.fromRGB(100, 200, 255), -- main light blue color for accents
-	["Color Text"] = Color3.fromRGB(30, 30, 30), -- dark grey for text
-	["Color Dark Text"] = Color3.fromRGB(100, 100, 100) -- medium grey for secondary text
-		},
-		Dark = {
-	["Color Hub 1"] = ColorSequence.new({
-		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230, 240, 250)), -- very light blue
-		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(240, 250, 255)),
-		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 240, 250))
-	}),
-	["Color Hub 2"] = Color3.fromRGB(245, 255, 255), -- almost white with a hint of blue
-	["Color Stroke"] = Color3.fromRGB(200, 220, 240), -- soft blue stroke for outlines
-	["Color Theme"] = Color3.fromRGB(100, 200, 255), -- main light blue color for accents
-	["Color Text"] = Color3.fromRGB(30, 30, 30), -- dark grey for text
-	["Color Dark Text"] = Color3.fromRGB(100, 100, 100) -- medium grey for secondary text
-		},
-		Purple = {
-	["Color Hub 1"] = ColorSequence.new({
-		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230, 240, 250)), -- very light blue
-		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(240, 250, 255)),
-		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 240, 250))
-	}),
-	["Color Hub 2"] = Color3.fromRGB(245, 255, 255), -- almost white with a hint of blue
-	["Color Stroke"] = Color3.fromRGB(200, 220, 240), -- soft blue stroke for outlines
-	["Color Theme"] = Color3.fromRGB(100, 200, 255), -- main light blue color for accents
-	["Color Text"] = Color3.fromRGB(30, 30, 30), -- dark grey for text
-	["Color Dark Text"] = Color3.fromRGB(100, 100, 100) -- medium grey for secondary text
-		},
 	        Azurium = {
 	["Color Hub 1"] = ColorSequence.new({
-		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230, 240, 250)), -- very light blue
-		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(240, 250, 255)),
-		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 240, 250))
+		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), -- dark grey background
+		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(45, 45, 45)),
+		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(40, 40, 40))
 	}),
-	["Color Hub 2"] = Color3.fromRGB(245, 255, 255), -- almost white with a hint of blue
-	["Color Stroke"] = Color3.fromRGB(200, 220, 240), -- soft blue stroke for outlines
-	["Color Theme"] = Color3.fromRGB(100, 200, 255), -- main light blue color for accents
-	["Color Text"] = Color3.fromRGB(30, 30, 30), -- dark grey for text
-	["Color Dark Text"] = Color3.fromRGB(100, 100, 100) -- medium grey for secondary text
-		}
+	["Color Hub 2"] = Color3.fromRGB(50, 50, 50), -- darker grey for secondary backgrounds
+	["Color Stroke"] = Color3.fromRGB(200, 220, 240), -- soft blue stroke for accents
+	["Color Theme"] = Color3.fromRGB(100, 200, 255), -- light blue for secondary highlights
+	["Color Text"] = Color3.fromRGB(255, 255, 255), -- white for primary text (highlights)
+	["Color Dark Text"] = Color3.fromRGB(150, 150, 150) -- lighter grey for secondary text
+}
+
 	},
 	Info = {
 		Version = "7.7.7"
