@@ -1,6 +1,8 @@
 local azrlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
 
-local Window = azrlib:MakeWindow({"redz Hub : Blox Fruits", "by redz9999", "testando-redzLibv5.json"})
+local dev = "nigga" -- Developer who made that script for map
+
+local Window = azrlib:MakeWindow({"Azurium HUB: MAP", "by " .. dev, "testando-redzLibv5.json"})
 Window:AddMinimizeButton({
   Button = { Image = "rbxassetid://124661137788979", BackgroundTransparency = 0 },
   Corner = { CornerRadius = UDim.new(0, 6) }
