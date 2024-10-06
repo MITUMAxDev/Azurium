@@ -8,9 +8,9 @@ Window:AddMinimizeButton({
   Corner = { CornerRadius = UDim.new(0, 6) }
 })
 
-local Tab1 = Window:MakeTab({"Um", ""})
-local Tab2 = Window:MakeTab({"Dois", "Sword"})
-local Tab3 = Window:MakeTab({"Três", "User"})
+local Tab1 = Window:MakeTab({"Home", ""})
+local Tab2 = Window:MakeTab({"Niggas", "Sword"})
+local Tab3 = Window:MakeTab({"Credits", "User"})
 
 Tab1:AddButton({"Dark Theme", function()
   redzlib:SetTheme("Dark")
