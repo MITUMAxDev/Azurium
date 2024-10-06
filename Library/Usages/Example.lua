@@ -1,13 +1,14 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+local azrlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
 
-local Window = redzlib:MakeWindow({
-  Title = "redz Hub : Blox Fruits",
-  SubTitle = "by redz9999",
-  SaveFolder = "testando | redz lib v5.lua"
+local Window = azrlib:MakeWindow({"redz Hub : Blox Fruits", "by redz9999", "testando-redzLibv5.json"})
+Window:AddMinimizeButton({
+  Button = { Image = "rbxassetid://124661137788979", BackgroundTransparency = 0 },
+  Corner = { CornerRadius = UDim.new(0, 6) }
 })
-local Tab1 = Window:MakeTab({"Um", "cherry"})
-local Tab2 = Window:MakeTab({"Dois", "swords"})
-local Tab3 = Window:MakeTab({"Três", "user"})
+
+local Tab1 = Window:MakeTab({"Um", ""})
+local Tab2 = Window:MakeTab({"Dois", "Sword"})
+local Tab3 = Window:MakeTab({"Três", "User"})
 
 Tab1:AddButton({"Dark Theme", function()
   redzlib:SetTheme("Dark")
@@ -21,7 +22,7 @@ Tab1:AddButton({"Dark Purple", function()
   redzlib:SetTheme("Purple")
 end})
 
-Window:SelectTab(Tab2)
+-- Window:SelectTab(Tab2)
 local Section = Tab2:AddSection({"Section"})
 local Paragraph = Tab2:AddParagraph({"Paragraph", "This is a Paragraph\nSecond Line"})
 
@@ -33,13 +34,7 @@ local Button = Tab2:AddButton({"Button", function()
     Title = "Dialog",
     Text = "This is a Dialog",
     Options = {
-      {"Confirm", function()
-        
-      end},
-      {"Maybe", function()
-        
-      end},
-      {"Cancel", function()
+      {"Ok!", function()
         
       end}
     }
@@ -54,12 +49,14 @@ local Button = Tab2:AddButton({
 local Toggle1 = Tab2:AddToggle({
   Name = "Toggle 1",
   Description = "This is a <font color='rgb(88, 101, 242)'>Toggle</font> Example",
+  Flag = "Toggle1",
   Default = false
 })
 
 local Toggle2 = Tab2:AddToggle({
   Name = "Toggle 2",
-  Default = true
+  Default = true,
+  Flag = "Toggle2"
 })
 
 Button:Callback(Toggle1.Visible)
@@ -72,52 +69,63 @@ Toggle2:Callback(function(Value)
   Toggle1:Set(false)
 end)
 
-Tab2:AddSlider({
-  Name = "Slider",
-  Min = 1,
-  Max = 10,
-  Increase = 1,
-  Default = 5,
-  Callback = function(Value)
-    
-  end
-})
-
 -- local Button = Tab2:AddButton({"Refresh Dropdown"})
 
 local Dropdown = Tab2:AddDropdown({
   Name = "Players List",
-  Description = "Select the <font color='rgb(88, 101, 242)'>Number</font>",
-  Options = {"one", "two", "three"},
-  Default = "two",
-  Flag = "dropdown teste",
-  Callback = function(Value)
-    
-  end
-})]]
+  Description = "Select a random Number",
+  Options = {"One", "Two", "Three", "Four", "Five"},
+  Default = {"Two", "Four"},
+  Flag = "Dropdown Teste 2",
+  MultiSelect = true
+})
+
+-- Dropdown:Set("All", false)
+-- Dropdown:Set("All", true)
+
+Dropdown:Callback(function(Value)
+  -- table.foreach(Value, print)
+  -- print(Value, typeof(Value))
+end)
+
+local Slider = Tab2:AddSlider({
+  Name = "This is a Slider",
+  -- Flag = "Slider Teste"
+  Default = 40
+})
+
+Slider:Callback(function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+end)
 
 --[[Button:Callback(function()
-  Dropdown:Set(game.Players:GetPlayers())
-  Dropdown:Remove(game.Players.LocalPlayer.Name)
-end)
+  Dropdown:Set(Players:GetPlayers())
+  Dropdown:Remove(Player.Name)
+end
 
 Dropdown:Remove(Player.Name)
 Dropdown:Select(1)]]
 
---[[Tab2:AddTextBox({
+local TextBox = Tab2:AddTextBox({
   Name = "Textbox",
-  Description = "this is a Text box",
-  Default = "Text",
+  Description = "Walk Speed",
+  PlaceholderText = "Number: 25/100",
   Callback = function(Value)
-    
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
   end
 })
 
-Tab3:AddDiscordInvite({
-  Name = "redz Hub | Community",
-  Logo = "rbxassetid://15298567397",
-  Invite = "https://discord.gg/7aR7kNVt4g"
-})
+TextBox.OnChanging = function(Text)
+  local Number = tonumber(Text)
+  if Number then
+    return math.clamp(Number, 25, 100)
+  end
+  return 25
+end
 
--- Simple example ;)
--- More in soon...
+Tab3:AddDiscordInvite({
+  Name = "Azurium | Community",
+  Description = "Join our discord community to receive information about the next update",
+  Logo = "rbxassetid://124661137788979",
+  Invite = "https://discord.gg/79cSmtQb6c"
+})
