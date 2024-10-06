@@ -1,8 +1,8 @@
 local azrlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MITUMAxDev/Azurium/main/Library/Source.lua"))()
 
-local dev = "nigga" -- Developer who made that script for map
+local dev = "mituma" -- Developer who made that script for map
 
-local Window = azrlib:MakeWindow({"Azurium HUB | MAP", "by " .. dev, "testando-redzLibv5.json"})
+local Window = azrlib:MakeWindow({"Azurium HUB | Drive World", "by " .. dev, "azurium-hub.json"})
 Window:AddMinimizeButton({
   Button = { Image = "rbxassetid://124661137788979", BackgroundTransparency = 0 },
   Corner = { CornerRadius = UDim.new(0, 6) }
@@ -125,7 +125,7 @@ TextBox.OnChanging = function(Text)
   return 25
 end
 
-local Credit = Tab3:AddParagraph({"Credit", "idk just a credit"})
+local CR = Credit:AddParagraph({"Credit", "idk just a credit"})
 
 Tab3:AddDiscordInvite({
   Name = "Azurium | Community",
@@ -134,4 +134,4 @@ Tab3:AddDiscordInvite({
   Invite = "https://discord.gg/79cSmtQb6c"
 })
 
-local MapDev = Tab3:AddParagraph({"Developer Credit", "Map Supported by " .. dev})
+local MapDev = Credit:AddParagraph({"Developer Credit", "Map Supported by " .. dev})
