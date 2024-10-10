@@ -7,7 +7,7 @@ elseif placeId == "17625359962" then
   -- RIVALS
   loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/MITUMAxDev/Azurium/refs/heads/main/maps/Rivals'))()
 
-elseif placeId == "" then
+elseif placeId == "8540168650" then
   -- STAND UPRIGHT
   loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/MITUMAxDev/Azurium/refs/heads/main/maps/Stand-Upright'))()
 
