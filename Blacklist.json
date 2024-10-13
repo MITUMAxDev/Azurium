@@ -1,0 +1,16 @@
+{
+  "BlacklistedUser": {
+    "1087917165790904350": {
+      "HWID" : "Unknown HWID(Placeholder)",
+      "IP": "Unknown IP(Placeholder)",
+      "Reason": "Test",
+      "Expiration": "Perm"
+    },
+    "973819708196": {
+      "HWID" : "Unknown HWID(Placeholder)",
+      "IP": "Unknown IP(Placeholder)",
+      "Reason": "Test",
+      "Expiration": "Perm or Temp"
+    }
+  }
+}
