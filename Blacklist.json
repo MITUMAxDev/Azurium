@@ -7,10 +7,10 @@
       "Expiration": "Perm"
     },
     "973819708196": {
-      "HWID" : "Unknown HWID(Placeholder)",
+      "HWID" : "3102ec6125931594b2e9571e7d99dc618af8f784ef5b877a45a6cb4afd293f5651f4e05df5db4e9c0fbaaf3068972b4bfcef64b131dda50675336baf77a09959",
       "IP": "Unknown IP(Placeholder)",
-      "Reason": "Test",
-      "Expiration": "Perm or Temp"
+      "Reason": "Bot Detected Join Discord For Appeal By Dm Eclipse",
+      "Expiration": "Temp"
     }
   }
 }
