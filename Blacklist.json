@@ -1,7 +1,7 @@
 {
   "BlacklistedUser": {
     "1087917165790904350": {
-      "HWID" : "",
+      "HWID" : "34468b7c7f595f23454f5dc43c9363a1531deb7e5d39f4389f3cfd74af5845a12d344d45cff141da0d8a215391360811871eeae016c9f0e1e5ec0c40c4c19b40",
       "IP": "Unknown IP(Placeholder)",
       "Reason": "Test",
       "Expiration": "Perm"
