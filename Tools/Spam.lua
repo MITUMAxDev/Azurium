@@ -1,5 +1,5 @@
 local TargetPlace = "8540168650"
-local TargetJob = "78ae31e2-8559-4421-8f58-b04b6e66f64e"
+local TargetJob = "a7537f70-9ed5-437b-b997-d5f18a61ad8e"
 local TargetPlayer = "TENN999FF"
 ---- [[ TELEPORT ]] ----
 local thisPlace = tostring(game.PlaceId)
