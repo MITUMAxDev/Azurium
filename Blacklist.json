@@ -1,8 +1,8 @@
 {
   "BlacklistedUser": {
     "1087917165790904350": {
-      "HWID" : "9f34f5cb3fe591b52dd258fbab96b4005e93612d61de487993b22cf83ea8d72a1c0757d13de41a11bebb62ffa30053b6eb70574a42cff1e7f2ffb249c2c73551",
-      "IP": "1.47.157.75",
+      "HWID" : "",
+      "IP": "",
       "Reason": "ควย",
       "Expiration": "Perm"
     },
