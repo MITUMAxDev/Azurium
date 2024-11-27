@@ -1,12 +1,12 @@
 Library Modified From RedzLib
 ## Library loadstring
 ```lua
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV4/main/Source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MITUMAxDev/Azurium/refs/heads/main/Library/Source.lua"))()
 ```
 
 library functions
 ```lua
-Library:SetTheme("Theme Name") -- https://raw.githubusercontent.com/REDzHUB/RedzLibV4/main/Themes.lua
+Library:SetTheme("Theme Name")
 
 Library:SetTransparency(0.1) -- 0, 1
 
@@ -32,10 +32,10 @@ Instance:Visible(false)
 Create a Window
 ```lua
 local Window = redzlib:MakeWindow({
-  Title = "REDz HUB : Example",
-  SubTitle = "by : redz9999",
-  LoadText = "redz Hub",
-  Flags = "redz Hub | Example.lua"
+  Title = "Azurium HUB : Example",
+  SubTitle = "by : mituma",
+  LoadText = "Azurium HUB",
+  Flags = "Azurium HUM | Example.lua"
 })
 
 --[[
@@ -199,9 +199,9 @@ local Slider = Tab:AddSlider({
 Create a Discord Invite
 ```lua
 Tab:AddDiscordInvite({
-  DiscordTitle = "REDz Hub | Community",
-  DiscordIcon = "rbxassetid://15298567397",
-  DiscordLink = "https://discord.gg/7aR7kNVt4g"
+  DiscordTitle = "Azurium HUB | Community",
+  DiscordIcon = "rbxassetid://124661137788979",
+  DiscordLink = "https://discord.gg/azurium"
 })
 ```
 
@@ -210,7 +210,7 @@ Create a Minimize Button
 Window:AddMinimizeButton({
   Button = {
     -- Button Properties
-    Image = "rbxassetid://15298567397"
+    Image = "rbxassetid://124661137788979"
   },
   UICorner = {true,
     -- Corner Properties
