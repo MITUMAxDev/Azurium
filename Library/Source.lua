@@ -9,37 +9,36 @@ local Player = Players.LocalPlayer
 local PlayerMouse = Player:GetMouse()
 
 local azrlib = {
-	Themes = {
-	        Azurium = {
-	["Color Hub 1"] = ColorSequence.new({
-		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), -- dark grey background
-		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(45, 45, 45)),
-		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(40, 40, 40))
-	}),
-	["Color Hub 2"] = Color3.fromRGB(50, 50, 50), -- darker grey for secondary backgrounds
-	["Color Stroke"] = Color3.fromRGB(200, 220, 240), -- soft blue stroke for accents
-	["Color Theme"] = Color3.fromRGB(100, 200, 255), -- light blue for secondary highlights
-	["Color Text"] = Color3.fromRGB(255, 255, 255), -- white for primary text (highlights)
-	["Color Dark Text"] = Color3.fromRGB(150, 150, 150) -- lighter grey for secondary text
-}
-
-	},
-	Info = {
-		Version = "7.7.7"
-	},
-	Save = {
-		UISize = {550, 380},
-		TabSize = 160,
-		Theme = "Azurium"
-	},
-	Settings = {},
-	Connection = {},
-	Instances = {},
-	Elements = {},
-	Options = {},
-	Flags = {},
-	Tabs = {},
-	Icons = loadstring(game:HttpGet("https://raw.githubusercontent.com/MITUMAxDev/Azurium/main/Library/Icons.lua"))()
+    Themes = {
+        Azurium = {
+            ["Color Hub 1"] = ColorSequence.new({
+                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(15, 15, 20)), -- dark blue-gray background
+                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(20, 20, 30)),
+                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 15, 20))
+            }),
+            ["Color Hub 2"] = Color3.fromRGB(25, 30, 40), -- darker blue-gray for secondary backgrounds
+            ["Color Stroke"] = Color3.fromRGB(50, 150, 200), -- vibrant cyan stroke for accents
+            ["Color Theme"] = Color3.fromRGB(80, 190, 240), -- bright blue for secondary highlights
+            ["Color Text"] = Color3.fromRGB(220, 240, 255), -- light cyan for primary text
+            ["Color Dark Text"] = Color3.fromRGB(100, 120, 140) -- muted blue-gray for secondary text
+        }
+    },
+    Info = {
+        Version = "7.7.7"
+    },
+    Save = {
+        UISize = {550, 380},
+        TabSize = 160,
+        Theme = "Azurium"
+    },
+    Settings = {},
+    Connection = {},
+    Instances = {},
+    Elements = {},
+    Options = {},
+    Flags = {},
+    Tabs = {},
+    Icons = loadstring(game:HttpGet("https://raw.githubusercontent.com/MITUMAxDev/Azurium/main/Library/Icons.lua"))()
 }
 
 local ViewportSize = workspace.CurrentCamera.ViewportSize
